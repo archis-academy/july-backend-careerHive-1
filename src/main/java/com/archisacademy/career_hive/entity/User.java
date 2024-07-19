@@ -1,4 +1,4 @@
-package entity;
+package com.archisacademy.career_hive.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
