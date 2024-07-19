@@ -40,5 +40,5 @@ public class Certificate {
 
     @Column(name = "user_id")
     private long userId;
-    
+
 }
