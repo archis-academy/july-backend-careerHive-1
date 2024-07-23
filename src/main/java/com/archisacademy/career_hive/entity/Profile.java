@@ -16,10 +16,17 @@ public class Profile {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private long id;
+
     @Column(name = "user_name")
     private String username;
+
     @Column(name = "profile_photo")
     private String profilePhoto;
+
     @Column(name = "about")
     private String about;
+
+    @OneToOne
+    @JoinColumn(name = "address_id")
+    private Address address;
 }
