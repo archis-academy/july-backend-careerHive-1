@@ -3,8 +3,10 @@ package com.archisacademy.career_hive.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
-@Data
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "addresses")
 public class Address {
 
