@@ -38,7 +38,4 @@ public class Certificate {
     @Column(name = "skill",nullable = false)
     private String skill;
 
-    @Column(name = "user_id")
-    private long userId;
-
 }
