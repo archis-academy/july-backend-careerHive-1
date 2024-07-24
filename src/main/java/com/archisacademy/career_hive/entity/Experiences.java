@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Table(name = "Experience")
-public class Experience {
+@Table(name = "experiences")
+public class Experiences {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,7 +33,7 @@ public class Experience {
     @Column(name = "location_type", nullable = false)
     private String locationType;
 
-    @Column(name = "still_working", nullabele = false)
+    @Column(name = "still_working", nullable = false)
     private boolean stillWorking;
 
     @Column(name = "description", nullable = false)
