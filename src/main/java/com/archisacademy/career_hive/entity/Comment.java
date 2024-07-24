@@ -25,17 +25,17 @@ public class Comment {
     @Column(name = "created_at")
     private Timestamp created_at;
 
-    @Column(name = "user_id")
-    private int userID;
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "post_id")
     private Post post;
 
-    
-    @Column(name = "user_post_comment_mapper_id")
-    private UserPostCommentMapper userPostCommentMapper;
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
+    @ManyToOne
+    @JoinColumn(name = "user_post_comment_mapper_id")
+    private UserPostCommentMapper userPostCommentMapper;
 
 
 
